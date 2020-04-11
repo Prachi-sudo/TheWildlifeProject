@@ -1,0 +1,297 @@
+body, html {
+  height: 100%;
+  /* overflow-x: hidden; */
+}
+
+.bg-image {
+	background-image: url("Images/snow-rock.jpg");
+	/* height: 100%; */
+	background-position: center;
+	background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 2rem;
+}
+
+#navbar {
+  background-color: #000000a1;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  z-index: 3;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar .active {
+	background-color: #ddd;
+	color: black;
+}
+
+.header {
+	padding-top: 80px;
+	text-align: center;
+}
+
+.h2 {
+	text-align: center;
+	padding-top: 30px;
+}
+
+.content {
+	font-family: 'Gotu', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	align-content: justify;
+	padding-top: 20px;
+}
+
+.footer {
+	padding-top: 30px;
+}
+
+
+/*Contact Page CSS*/
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('fonts/montserrat/Montserrat-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Montserrat-Bold;
+    src: url('fonts/montserrat/Montserrat-Bold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Montserrat-ExtraBold;
+    src: url('fonts/montserrat/Montserrat-ExtraBold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Montserrat-Medium;
+    src: url('fonts/montserrat/Montserrat-Medium.ttf'); 
+  }
+
+html{
+    height: 100%;
+    font-family: Montserrat-ExtraBold;
+}
+
+.bg-img{
+    /* width: 100%; */
+    /* min-height: 100%; */
+    height: 110vh;
+    background-image: url("Images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-container{
+      background: #ffffff6b;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 130px 88px 148px;
+    margin: 30px;
+    margin-top: 93px;
+}
+
+.contact1-pic {
+    width: 296px;
+  }
+  
+  .contact1-pic img {
+    max-width: 100%;
+  }
+
+  .form-title {
+    display: block;
+    font-family: Montserrat-ExtraBold;
+    font-size: 24px;
+    color: #333333;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 44px;
+  }
+  .form-col{
+    width: 500px;
+  }
+  .form-control{
+      border-radius: 2px;
+      height: 50px;
+        border-radius: 25px;
+        padding: 0 30px;
+  }
+  .textarea-cstm{
+    height: 150px;
+    padding-top: 30px;
+  }
+  .btn-form{
+    border-radius: 12px;
+    padding: 15px 30px;
+  }
+  .social{
+    justify-content: space-between;
+    display: flex;
+  }
+  .insta-icon{
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .gplus-icon{
+    color: #db4a39;
+  }
+  .fb-icon{
+    color: #3b5998;
+  }
+  .twitter-icon{
+    color: #00acee;
+  }
+  .pinterest-icon{
+    color: #c8232c;
+  }
+
+  @media (max-width: 768px) {
+    .middle-container {
+      padding: 40px 20px 40px 20px;
+      /* margin: 0px; */
+    }
+    .form-col {
+        width: 100%;
+    }
+    .social{
+        margin-bottom: 20px;
+    }
+    .container{
+      width: auto;
+      margin-right: 20px;
+    margin-left: 20px;
+    }
+  }
+
+  .bg-text{
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    padding: 20px;
+  }
+  .backgroundCol{
+    background-color: #444242;
+    color: #fff;
+  }
+  .footer-links{
+	  color: #fff;
+	  text-decoration: none;
+  }
+
+  .footer-links:hover{
+	  color: #fff;
+	  text-decoration: underline;
+  }
+
+  .footer-social{
+    justify-content: space-evenly;
+    display: flex;
+  }
+  .subscribe-input{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-radius: 13px;
+      background-color: #444242;
+      color: #fff;
+    }
+    .subscribe-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+    }
+    
+    .subscribe-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+    }
+    
+    .subscribe-input::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff;
+    }
+    .subscribe-btn{
+      border-radius: 15px;
+        color: #fff;
+      }
+
+      /* Gallery CSS */
+      
+      .grid-container {
+        columns: 5 200px;
+        column-gap: 1.5rem;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 5rem;
+      }
+      .grid-container div {
+          width: 150px;
+          margin: 0 1.5rem 1.5rem 0;
+          display: inline-block;
+          width: 100%;
+          border: solid 2px black;
+          padding: 5px;
+          box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+          border-radius: 5px;
+          transition: all .25s ease-in-out;
+      }
+      .grid-container div:hover img {
+            filter: grayscale(0);
+          }
+          .grid-container div:hover {
+            border-color: coral;
+          }
+          .grid-container div img {
+            width: 100%;
+            filter: grayscale(100%);
+            border-radius: 5px;
+            transition: all .25s ease-in-out;
+          }
+          .grid-container div p {
+            margin: 5px 0;
+            padding: 0;
+            text-align: center;
+            font-style: italic;
+          }
+        
+      
